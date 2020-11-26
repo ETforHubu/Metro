@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"> 
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+    <!-- 输出到控制台 -->
+	<appender name="console.log" class="org.apache.log4j.ConsoleAppender">
+	    <layout class="org.apache.log4j.PatternLayout">
+		    <param name="ConversionPattern" 
+		        value="%d{yyyy-MM-dd HH:mm:ss}=>%p (%F:%L): %m%n" />
+	    </layout>
+	</appender>
+		
+	<!-- 自定义logger设置 additivity指示是否遵循缺省的继承机制 -->
+	<logger name="service.log" additivity="false">
+	    <level value ="debug"/>
+	    <appender-ref ref="console.log" />
+	</logger>  
+	
+	<!-- 根logger设置 -->
+	<root>
+	    <priority value="info" />
+	    <appender-ref ref="console.log" />
+	</root>
+	
+</log4j:configuration>

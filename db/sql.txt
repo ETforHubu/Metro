@@ -1,0 +1,17 @@
+CREATE TABLE MC_Node(
+	ID varchar2(50) primary key,
+	ParentID varchar2(50),
+	Title varchar2(50) NULL,
+	Code varchar2(500) NULL,
+	Value varchar2(100) NULL,
+	Note varchar2(100) NULL,
+	Other varchar2(100) NULL,
+	Sort integer NULL,
+	Quantity decimal(18, 2) NULL,
+	Unit varchar2(50) NULL,
+	ConstructionCost decimal(18, 2) NULL,
+	InstallCost decimal(18, 2) NULL,
+	DeviceCost decimal(18, 2) NULL,
+	OtherCost decimal(18, 2) NULL,
+	Quota decimal(18, 2) NULL,
+	SNumber varchar2(50) NULL)

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<excel-mapping>
+    <!-- 
+    	index="0" 表示 表在excle的顺序 默认是从0开始的
+    	skiprow="0" 表示从表的第一行开始读或写  可指定起始读取行位置
+    	skipcol="0" 表示从表的第一列开始读或写  可指定起始读取列位置
+    	isused="1" 只有两个值 0或1 0表示不启用该配置 1表示启动
+    	cell name 表示所在列的列名
+    	colnum="0" 表示所在列的位置
+    	column name 存储值对应的实体类的参数名
+    	datatype 暂未用起来  随便填
+     -->
+	<!--<file name="测试模版.xlsx">-->
+		<!--<sheet name="Sheet1" index="0" skiprow="0" skipcol="0" isused="1">-->
+		    <!--<cell name="姓名" colnum="0">-->
+		        <!--<column name="name" datatype="String"></column>-->
+		    <!--</cell>-->
+		    <!---->
+		    <!--<cell name="手机号" colnum="1">-->
+		        <!--<column name="tel" datatype="String"></column>-->
+		    <!--</cell>-->
+		<!--</sheet>-->
+    <!--</file>-->
+
+	<file name="测试模版.xlsx">
+		<sheet name="Sheet1" index="0" skiprow="0" skipcol="0" isused="1">
+			<cell name="工程及费用名称" colnum="0">
+				<column name="title" datatype="String"></column>
+			</cell>
+			<cell name="单位" colnum="1">
+				<column name="unit" datatype="String"></column>
+			</cell>
+		</sheet>
+	</file>
+</excel-mapping>
